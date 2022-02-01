@@ -6,7 +6,5 @@ while($leeftijd<=17){
     $leeftijd++;
 
 };
-if($leeftijd =18){
-    echo "Ik ben $leeftijd jaar oud, dus ik heb stemrecht!";
-}
+
 ?>
