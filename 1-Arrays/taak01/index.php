@@ -1,4 +1,4 @@
 <?php
-$student = ["Christian","spelt","1c","17"]
+$student = ["Voornaam"=>"Christian","achternaam"=>"spelt","klas"=>"1c","leeftijd"=>"17"]
 
 ?>
