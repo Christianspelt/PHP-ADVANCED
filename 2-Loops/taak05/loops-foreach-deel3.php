@@ -1,13 +1,13 @@
 <?php
-$student  = array(
-    "voornaam"    => "Jan",
-    "achternaam"  => "Janssen",
-    "klas"        => "9A",
-    "Leeftijd"    => 17,
-    "Woonplaats"  => "Amstelveen"
-  );
+$student  = [
+    0=>"voornaam"    => "Jan",
+    1=>"achternaam"  => "Janssen",
+    2=>"klas"        => "9A",
+    3=>"Leeftijd"    => 17,
+    4=>"Woonplaats"  => "Amstelveen"
+];
 
 
-    print_r(array_keys($student));
+echo $student[2];
 
 ?>

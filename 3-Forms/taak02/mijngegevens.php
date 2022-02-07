@@ -2,16 +2,16 @@
 
 <?php 
 if ($color = "green"){
-  echo "<body style='background-color:green;'>";   
+    echo $_POST["green"];   
 } 
 elseif ($color = "blue"){
-    echo "<body style='background-color:blue;'>";   
+    echo $_POST["blue"];   
 } 
 elseif ($color = "white"){
-    echo "<body style='background-color:white;'>";   
+    echo $_POST["white"];   
 }
 elseif ($color = "yellow"){
-    echo "<body style='background-color:yellow;'>";   
+    echo $_POST["yellow"];   
 }
 ?>
 

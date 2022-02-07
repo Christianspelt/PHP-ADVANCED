@@ -1,0 +1,1 @@
+$student = ["artiest"=>"art","titel"=>"titel","Jaar van uitkomst"=>"jaar","muzieksoort"=>"soort"]
