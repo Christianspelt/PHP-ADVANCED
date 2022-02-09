@@ -15,10 +15,10 @@ woonplaats: <input type="text" name="woonplaats"><br>
 <input type="submit">
 
 <select name="color" >
-    <option name="blue" value="<body style='background-color:blue;'>">groen</option>
-    <option name="blue" value="blue">blauw </option>
-    <option name="white" value="white">wit</option>
-    <option name="yellow" value="yellow">geel</option>
+    <option name="color" value="green">groen</option>
+    <option name="color" value="blue">blauw </option>
+    <option name="color" value="white">wit</option>
+    <option name="color" value="yellow">geel</option>
   </select>
 </form>
 </body>

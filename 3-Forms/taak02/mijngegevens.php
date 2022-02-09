@@ -1,18 +1,21 @@
 <html>
+<body>
+<?php
 
-<?php 
-if ($color = "green"){
-    echo $_POST["green"];   
+$color= $_POST["color"] ;
+if ($color == "green"){
+    echo "<body style=background-color:green;>";   
 } 
-elseif ($color = "blue"){
-    echo $_POST["blue"];   
+elseif ($color == "blue"){
+    echo "<body style=background-color:blue;>";   
 } 
-elseif ($color = "white"){
-    echo $_POST["white"];   
+elseif ($color == "white"){
+    echo "<body style=background-color:white;>";   
 }
-elseif ($color = "yellow"){
-    echo $_POST["yellow"];   
+elseif ($color == "yellow"){
+    echo "<body style=background-color:yellow;>";   
 }
+
 ?>
 
 Welcome <?php echo $_POST["voornaam"];
