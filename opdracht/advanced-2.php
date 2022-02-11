@@ -16,23 +16,16 @@ echo "<body style=background-color:$x;>";
 <?php
     $info=["voornaam"=>"Christian","leeftijd"=>17,"muziek"=>"pop","woonplaats"=>"nieuwveen","sport"=>"sportloos"];
 ?>
-
+<table border="1">
+    <tr>
 <?php
     function maakrij($info){
         foreach($info as $y){echo "<th>$y</th>";};
     };
+    maakrij($info)
 ?> 
-
-<table border="1">
-    <tr>
-        <?php
-            ;
-            foreach($info as $y){echo "<th>$y</th>";};
-        
-        
-        ?>
     </tr>
-</table> 
+</table>
 
  
 </body>
