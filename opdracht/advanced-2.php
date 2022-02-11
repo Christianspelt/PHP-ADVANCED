@@ -7,21 +7,27 @@
     <title>Document</title>
 </head>
 <body backgroundcp>
+ 
     <?php
 $x= $_POST['color'];
 echo "<body style=background-color:$x;>";
 
     ?>
 <?php
-    $info=["Christian",17,"pop","nieuwveen","sportloos"];
+    $info=["voornaam"=>"Christian","leeftijd"=>17,"muziek"=>"pop","woonplaats"=>"nieuwveen","sport"=>"sportloos"];
 ?>
 
+<?php
+    function maakrij($info){
+        foreach($info as $y){echo "<th>$y</th>";};
+    };
+?> 
 
 <table border="1">
     <tr>
         <?php
             ;
-            foreach($info as $y){echo "<td>$y</td>";};
+            foreach($info as $y){echo "<th>$y</th>";};
         
         
         ?>
