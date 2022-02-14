@@ -6,21 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body backgroundcp>
+<body>
+<style>
+body
+{
+    background-color: <?php echo $_POST['colorb'] ?>;
+    color: <?php echo $_POST['colort'] ?>;
+}
+table{
+    padding:<?php echo $_POST['padding']?>px;
+}
+</style>
  
     <?php
-$x= $_POST['color'];
-echo "<body style=background-color:$x;>";
+$x= $_POST['colorb'];
+$q= $_POST['colort'];
+
 
     ?>
 <?php
-    $info=["voornaam"=>"Christian","leeftijd"=>17,"muziek"=>"pop","woonplaats"=>"nieuwveen","sport"=>"sportloos"];
+    $info=["voornaam"=>'Christian',"leeftijd"=>17,"muziek"=>'pop',"woonplaats"=>'nieuwveen',"sport"=>'sportloos'];
 ?>
-<table border="1">
-    <tr>
+<?php
+
+$a= $_POST["dikte"];
+echo "<table border=$a>";
+?> 
+<tr>
 <?php
     function maakrij($info){
-        foreach($info as $y){echo "<th>$y</th>";};
+        foreach($info as $y => $x){echo "<th  style=background-color:;>$y</th><th  style=background-color:;>$x</th>";};
     };
     maakrij($info)
 ?> 
