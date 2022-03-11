@@ -8,14 +8,14 @@
 </head>
 <body>
     <?php
-function schrijfKleurs(){
-    echo "<p style=color:red;>Deze tekst is in de kleur red.</p>";
-    echo "<p style=color:green;>Deze tekst is in de kleur groen.</p>";
-    echo "<p style=color:blue;>Deze tekst is in de kleur blue.</p>";
-    echo "<p style=color:yellow;>Deze tekst is in de kleur geel.</p>";
+$kleur =["red","green","blue","yellow"];
+function schrijfKleurs($kleur){
+    foreach($kleur as $kleur){
+        echo "<p style=color:$kleur;>Deze tekst is in de kleur $kleur.</p>";
+    };
 }
 
-schrijfKleurs(); 
+schrijfKleurs($kleur); 
   
     ?>
 </body>
